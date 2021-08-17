@@ -1,0 +1,41 @@
+.container{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+    height: 100vh;
+    background-image: url(/src/assets/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+
+
+.home__inner{
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+.home__title{
+    margin: 0;
+    line-height: 1;
+    color: #fff;
+    font-weight: 700;
+    font-size: 165px;
+    z-index: 3;
+}
+
+.home__suptitle{
+    text-transform: uppercase;
+    color: rgb(245, 245, 245);
+    font-size: 32px;
+}
