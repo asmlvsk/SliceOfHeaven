@@ -1,10 +1,7 @@
 .body{
     margin: 0 auto;
-    padding-top: 100px;
-    width: 1300px;
-    color: white;
-    display: flex;
-    flex-direction: column;
+    margin-top: 100px;
+    width: 1200px;
 }
 
 .mainContent{
@@ -13,34 +10,42 @@
 }
 
 .items{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 
 .block{
     margin: 20px 20px 0 0;
-
+    line-height: 0;
 }
 
 .main{
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
     width: 300px;
-    height: 400px;
-    background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
-    border: 1px solid #b9b9b9;
-    border-radius: 25px;
-    padding: 35px;
+    height: 300px;
+    background-color: var(--secondary-color);
+    /* background-image: linear-gradient(-20deg, #da8b41 0%, #eed85d 100%); */
+    border-radius: 0 0 15px 15px;
+    padding: 25px;
 }
 
-.type__img{
-
+.type__title{
+    font-size: 20px;
     text-align: center;
 }
 
 .content{
-    text-align: center;
-    margin: auto;
-    height: 130px;
-    border: 1px solid #b9b9b9;
+    color: var(--default-color);
+    background-color: var(--secondary-color);
+    width: 300px;
+    height: 200px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
 }
 
 .description{
@@ -56,15 +61,16 @@
 }
 
 .buttonContainer{
+    display: flex;
     padding-top: 20px;
-    justify-content: center;
-    text-align: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .button {
-    border: 1px solid #b9b9b9;
+    background-color: var(--main-color);
     border-radius: 25px;
-    color: white;
+    color: var(--default-color);
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -75,10 +81,14 @@
   }
 
 .cartBlock{
+    width: 25%;
+    display: flex;
+    justify-content: center;
     margin-top: 20px;
 }
 
 .pagination{
+    color: var(--default-color);
     margin-top: 50px;
     margin-bottom: 50px;
     display: flex;
@@ -98,6 +108,6 @@
 }
 
 .cart{
-    color: white;
+    color: var(--default-color);
 }
 

@@ -5,13 +5,14 @@ import Cart from "./Cart";
 
 class CartContainer extends React.Component{
 
+
     render(){
-        return<Cart />
+        return<Cart cartItems={this.props.cartItems} onAdd={this.props.onAdd} onRemove={this.props.onRemove} />
     }
 }
 
 const mapStateToProps = (state) =>({
-    cartItems: state.cart.cartItems
+    // cartItems: state.cart.cartItems
 });
 
 export default connect(mapStateToProps, {addToCart})(CartContainer);

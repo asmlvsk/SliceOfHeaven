@@ -12,13 +12,13 @@ const NavBar = (props) => {
                     <NavLink to="/" className={header.logo}>SLICE OF HEAVEN</NavLink>
                     <nav className={header.nav}>
                         <NavLink to="/menu" className={header.nav__link}>Menu</NavLink>
-                        <NavLink to="/o-nas" className={header.nav__link}>O nas</NavLink>
+                        <NavLink to="/contact" className={header.nav__link}>Contact</NavLink>
                         <NavLink to="/praca" className={header.nav__link}>Praca</NavLink>
                         <div className={header.nav__link}>
                             {props.isAuth ? props.login : <NavLink to="/login">Konto</NavLink>}
                         </div>
                         <NavLink to="/cart" className={header.nav__link}>
-                            <Badge badgeContent={0} color="secondary">
+                            <Badge badgeContent={props.countCartItems} color="secondary">
                                 <ShoppingCartIcon />
                             </Badge>
                         </NavLink>

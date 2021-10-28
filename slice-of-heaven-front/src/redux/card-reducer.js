@@ -1,4 +1,5 @@
-const READ_MORE = "READ-MORE";
+import { usersAPI } from "../api/api";
+
 const SET_CARDS = "SET-CARDS";
 const SET_CURRENT_PAGE = "SET-CURRENT-PAGE";
 const SET_CARDS_COUNT = "SET-CARDS-COUNT";
@@ -12,10 +13,9 @@ let initialState = {
     isFetching: false
 }
 
+
 const cardReducer = (state = initialState, action) =>{   
     switch(action.type){
-
-        case READ_MORE:
 
         case SET_CARDS:{
             return {
@@ -47,10 +47,22 @@ const cardReducer = (state = initialState, action) =>{
 }
 
 
-export const readMore = () =>({type: READ_MORE})
 export const setCards = (cards) =>({type: SET_CARDS, cards})
 export const setCurrentPage = (currentPage) =>({type: SET_CURRENT_PAGE, currentPage})
 export const setAllCardsCount = (totalCardsCount) =>({type: SET_CARDS_COUNT, totalCardsCount})
 export const setIsFetching = (isFetching) =>({type: TOGGLE_IS_FETCHING, isFetching})
+
+export const getPages = (currentPage, pageSize) =>{
+    return (dispatch) =>{
+        dispatch(setIsFetching(true));
+
+        usersAPI.getPage(currentPage, pageSize).then(data=>{
+            dispatch(setIsFetching(false));
+            dispatch(setCards(data.items));
+            dispatch(setAllCardsCount(data.totalCount));
+    });
+    }
+
+}
 
 export default cardReducer;

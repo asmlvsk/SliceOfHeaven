@@ -22,15 +22,15 @@ namespace SliceOfHeaven.Controllers
 
         List<Pizza> list = new()
         {
-            new Pizza { Id = 1, Name = "Peperoni", Size = 40, Ingridients = "Salami, Sause", Price=34.99m, Image="/pizza/1", isActive=true},
-            new Pizza { Id = 2, Name = "Margherita", Size = 30, Ingridients = "Cheeze", Price = 24.99m, Image = "/pizza/2", isActive = true },
-            new Pizza { Id = 3, Name = "Prosciutto", Size = 30, Ingridients = "Peperoni, Maszrooms, Sause", Price = 34.99m, Image = "/pizza/3", isActive = true },
-            new Pizza { Id = 4, Name = "Hawajska", Size = 40, Ingridients = "ananas, szynka", Price = 44.99m, Image = "/pizza/4", isActive = true },
-            new Pizza { Id = 5, Name = "Maiami", Size = 40, Ingridients = "kukurydza, pomidorki koktajlowe, szynka", Price = 30.99m, Image = "/pizza/5", isActive = true },
-            new Pizza { Id = 6, Name = "Maiami", Size = 40, Ingridients = "kukurydza, pomidorki koktajlowe, szynka", Price = 31.99m, Image = "/pizza/6", isActive = true },
-            new Pizza { Id = 7, Name = "Maiami", Size = 40, Ingridients = "kukurydza, pomidorki koktajlowe, szynka", Price = 24.99m, Image = "/pizza/7", isActive = true },
-            new Pizza { Id = 8, Name = "Maiami", Size = 40, Ingridients = "kukurydza, pomidorki koktajlowe, szynka", Price = 54.99m, Image = "/pizza/8", isActive = true },
-            new Pizza { Id = 9, Name = "Maiami", Size = 40, Ingridients = "kukurydza, pomidorki koktajlowe, szynka", Price = 34.99m, Image = "/pizza/9", isActive = true },
+            new Pizza { Id = 1, Name = "Peperoni", Size = 40, Ingridients = "Salami, Sause", Price=34.99m, Image= "https://sliceofheaven.pl/wp-content/uploads/2019/09/pepperoni-min.png", isActive=true},
+            new Pizza { Id = 2, Name = "Margherita", Size = 30, Ingridients = "Cheeze", Price = 24.99m, Image = "https://sliceofheaven.pl/wp-content/uploads/2019/09/margherita-min.png", isActive = true },
+            new Pizza { Id = 3, Name = "Prosciutto", Size = 30, Ingridients = "Peperoni, Maszrooms, Sause", Price = 34.99m, Image = "https://sliceofheaven.pl/wp-content/uploads/2019/09/prosciutto-min.png", isActive = true },
+            new Pizza { Id = 4, Name = "Hawajska", Size = 40, Ingridients = "ananas, szynka", Price = 44.99m, Image = "https://sliceofheaven.pl/wp-content/uploads/2019/09/hawajska-min.png", isActive = true },
+            new Pizza { Id = 5, Name = "Maiami", Size = 40, Ingridients = "kukurydza, pomidorki koktajlowe, szynka", Price = 30.99m, Image = "https://sliceofheaven.pl/wp-content/uploads/2019/09/maiami-min.png", isActive = true },
+            new Pizza { Id = 6, Name = "Maiami", Size = 40, Ingridients = "kukurydza, pomidorki koktajlowe, szynka", Price = 31.99m, Image = "https://sliceofheaven.pl/wp-content/uploads/2019/09/maiami-min.png", isActive = true },
+            new Pizza { Id = 7, Name = "Maiami", Size = 40, Ingridients = "kukurydza, pomidorki koktajlowe, szynka", Price = 24.99m, Image = "https://sliceofheaven.pl/wp-content/uploads/2019/09/maiami-min.png", isActive = true },
+            new Pizza { Id = 8, Name = "Maiami", Size = 40, Ingridients = "kukurydza, pomidorki koktajlowe, szynka", Price = 54.99m, Image = "https://sliceofheaven.pl/wp-content/uploads/2019/09/maiami-min.png", isActive = true },
+            new Pizza { Id = 9, Name = "Maiami", Size = 40, Ingridients = "kukurydza, pomidorki koktajlowe, szynka", Price = 34.99m, Image = "https://sliceofheaven.pl/wp-content/uploads/2019/09/maiami-min.png", isActive = true },
         };
 
         [HttpGet]

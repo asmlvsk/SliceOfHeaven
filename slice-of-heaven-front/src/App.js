@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import CartContainer from './components/CartPage/CartContainer';
+import Contact from './components/Contact/Contact';
 import MainPage from './components/MainPage/MainPage';
 import NavBarContainer from './components/MainPage/NavigationBar/NavBarContainer';
 import Menu from './components/MenuPage/Menu';
@@ -13,6 +14,7 @@ function App() {
         <Switch>
           <Route exact path="/" render={() => <MainPage/>}/>
           <Route exact path="/menu" render={() => <Menu/>}/>
+          <Route exact path="/contact" render={() => <Contact/>}/>
           <Route exact path="/cart" render={() => <CartContainer/>}/>
         </Switch>
       </div>

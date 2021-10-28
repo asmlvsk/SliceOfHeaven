@@ -1,11 +1,12 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import CartContainer from '../../CartPage/CartContainer';
+import NavBarContainer from '../../MainPage/NavigationBar/NavBarContainer';
 import styles from './Card.module.css';
 
 let Card = (props) =>{
 
-    const [cart, setCart] = useState([]);
-    console.log(cart);
+    const [cartItems, setCartItems] = useState([]);
+    //console.log(cart);
 
     let pagesCount = Math.ceil(props.totalCardsCount/props.pageSize);
         
@@ -14,7 +15,27 @@ let Card = (props) =>{
         pages.push(i);
         
     }
-    const {cartItems} = props;
+
+    const onAddToCart = (product) =>{
+        const exists = cartItems.find(x => x.id === product.id);
+        if(exists){
+            setCartItems(cartItems.map(x => x.id === product.id ? {...exists, qty: exists.qty + 1} : x));
+        }
+        else{
+            setCartItems([...cartItems, {...product, qty: 1}]);
+        }
+    }
+
+    const onRemoveFromCart = (product) =>{
+        const exists = cartItems.find(x => x.id === product.id);
+        if(exists.qty === 1){
+            setCartItems(cartItems.filter((x) => x.id !== product.id))
+        }
+        else{
+            setCartItems(cartItems.map(x => x.id === product.id ? {...exists, qty: exists.qty - 1} : x));
+        }
+    }
+
     return<div className={styles.body}>        
             
             <div className={styles.mainContent}>
@@ -22,14 +43,15 @@ let Card = (props) =>{
                 <div className={styles.items}>
                 {
                     props.cards.map(t => <div key={t.id} className={styles.block}>
+                        <img src={t.image} className={styles.content} alt="Pizza Img"></img>
                             <div className={styles.main}>
-                                <div className={styles.content}>{t.image}</div>
-                                <div className={styles.type__img}>{t.name}</div>
+                                {/* <img src={pic} alt="2321" /> */}
+                                <div className={styles.type__title}>{t.name}</div>
                                 <div className={styles.description}>{t.ingridients}</div>
-                                <div className={styles.date}>Rozmiar: ok. {t.size} cm</div>
-                                <div className={styles.price}>Cena: {t.price} zł</div>
+                                <div className={styles.date}>Rozmiar: ok. {t.size} cm</div>                               
                                 <div className={styles.buttonContainer}>
-                                    <a onClick={() => props.addToCart(t)} className={styles.button}>Wybierz</a>
+                                    <div onClick={() => onAddToCart(t)} className={styles.button}>Wybierz</div>
+                                    <div className={styles.price}>{t.price} zł</div>
                                 </div>
                             </div>
                     </div>)
@@ -37,9 +59,10 @@ let Card = (props) =>{
                 </div>
 
                 <div className={styles.cartBlock}>
-                    <CartContainer/>
+                    <CartContainer cartItems={cartItems} onAdd={onAddToCart} onRemove={onRemoveFromCart}/>
                 </div>
 
+                <NavBarContainer countCartItems={cartItems.length} />
             </div>
 
             <div className={styles.pagination}>

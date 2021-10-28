@@ -5,6 +5,39 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+:root{
+  --main-bg-color: #2D2424;
+  --secondary-color: #5C3D2E;
+  --main-color: #B85C38;
+  --additional-color: #E0C097;
+  --default-color: #fff;
+}
+
+/* :root{
+  --main-bg-color: #2F2519;
+  --secondary-color: #4A3F35;
+  --main-color: #FA7D09;
+  --additional-color: #FF4301;
+  --default-color: #fff;
+} */
+
+/* :root{
+  --main-bg-color: #202040;
+  --secondary-color: #543864;
+  --main-color: #FF6363;
+  --additional-color: #FFBD69;
+  --default-color: #fff;
+} */
+
+/* :root{
+  --main-bg-color: #363333;
+  --secondary-color: #272121;
+  --main-color: #E16428;
+  --additional-color: #F6E9E9;
+  --default-color: #fff;
+} */
+
+
 html{
   scroll-behavior: smooth;
 }
