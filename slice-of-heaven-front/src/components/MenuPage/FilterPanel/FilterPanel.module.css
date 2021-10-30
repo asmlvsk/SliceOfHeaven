@@ -1,0 +1,37 @@
+.panelBody{
+    width: 100%;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    backdrop-filter: blur(8px);
+    color: var(--default-color);
+}
+
+.container{
+    font-size: 18px;
+    max-width: 1400px;
+    height: 136px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.itemIcon{
+    font-size: 30px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--default-color);
+    text-decoration: none;
+    cursor: pointer;
+  
+    transition: color .2s linear;
+}
+  
+.item:hover{
+    color: var(--main-color);
+}

@@ -10,6 +10,7 @@ const Cart = (props) => {
                 <div>{props.cartItems.length === 0 && <div className={style.emtyCart}>Koszyk jest pusty.</div>}</div>
                 {props.cartItems.map((item) => (
                     <div key={item.id} className={style.itemsBody}>
+                        <img src={item.image} className={style.itemsPic} alt="Pizza pic"></img>
                         <div className={style.itemsName}>{item.name}</div>
                         <div className={style.itemsBtns}>
                             <button onClick={() => props.onAdd(item)} className={style.itemsAdd}>+</button>

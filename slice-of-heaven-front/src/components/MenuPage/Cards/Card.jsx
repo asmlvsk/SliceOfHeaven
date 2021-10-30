@@ -45,7 +45,6 @@ let Card = (props) =>{
                     props.cards.map(t => <div key={t.id} className={styles.block}>
                         <img src={t.image} className={styles.content} alt="Pizza Img"></img>
                             <div className={styles.main}>
-                                {/* <img src={pic} alt="2321" /> */}
                                 <div className={styles.type__title}>{t.name}</div>
                                 <div className={styles.description}>{t.ingridients}</div>
                                 <div className={styles.date}>Rozmiar: ok. {t.size} cm</div>                               
