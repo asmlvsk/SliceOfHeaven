@@ -1,9 +1,9 @@
-.body{
+.cart__body{
     width: 100%;
     color: white;
 }
 
-.container{
+.cart__container{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -13,40 +13,40 @@
     border-radius: 15px;
 }
 
-.itemsBody{
+.cart__items_Body{
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-bottom: 10px;
 }
 
-.itemsPic{
+.cart__items_Pic{
     opacity: .3;
     object-fit: cover;
     width: 330px;
-    height: 120px;
+    height: 110px;
     position: absolute;
     z-index: -1;
 }
 
-.itemsName, .title{
+.cart__items_Name, .cart__title{
     font-size: 22px;
     align-items: center;
 }
 
-.itemsPrice{
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-
-.itemsBtns{
+.cart__items_Btns{
     display: flex;
     text-align: center;
     flex-direction: row;
     align-items: center;
 }
 
-.itemsAdd, .itemsRemove, .checkoutBtn{
+.cart__items_Price{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.cart__items_Add, .cart__items_Remove, .cart__checkoutBtn{
     background-color: transparent;
     border: 1px solid var(--main-color);
     border-radius: 10px;
@@ -58,7 +58,7 @@
     cursor: pointer;
 }
 
-.itemsAdd, .itemsRemove{
+.cart__items_Add, .cart__items_Remove{
     border-radius: 0;
     width: 50px;
     height: 50px;
@@ -66,15 +66,15 @@
     transition: background-color .2s linear;
 }
 
-.itemsRemove:hover{
+.cart__items_Add:hover{
     background-color: var(--main-color);
 }
 
-.itemsAdd:hover{
+.cart__items_Remove:hover{
     background-color: var(--main-color);
 }
 
-.checkoutBtn{
+.cart__checkoutBtn{
     border: none;
     background-color: var(--main-color);
     padding: 15px 32px;
@@ -83,7 +83,7 @@
     margin-bottom: 10px;
 }
 
-.mainDash, .dash{
+.cart__dash{
     margin: 0 auto;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -92,7 +92,7 @@
     background-color: var(--default-color);
 }
 
-.mainDash{
+.cart__dash{
     margin-top: 0;
     width: 100%;
 }

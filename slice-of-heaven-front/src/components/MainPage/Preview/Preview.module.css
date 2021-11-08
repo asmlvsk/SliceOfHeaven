@@ -1,4 +1,3 @@
-
 .home{
     position: relative;
     display: flex;
@@ -7,7 +6,7 @@
     height: 100vh;
 }
 
-.backgroundVid{
+.home__backgroundVid{
     position: absolute;
     left: 0;
     top: 0;
@@ -18,13 +17,7 @@
     opacity: 0.2;
 }
 
-.container{
-
-    text-align: center;
-    font-size: 40px;
-}
-
-.container{
+.home__container{
     z-index: 10;
     position: absolute; 
     top: 0; 
@@ -36,6 +29,7 @@
     align-items: center; 
     width: 100%;
     height: 100%;
+    font-size: 40px;
 }
 
 .home__inner{

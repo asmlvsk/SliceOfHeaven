@@ -1,11 +1,11 @@
-.container{
+.footer__container{
   width: 100%;
   backdrop-filter: blur(8px);
   border-radius: 25px 25px 0 0;
   bottom: 0;
 }
 
-.content{
+.footer__content{
   max-width: 1200px;
   margin: 0 auto;
   padding-top: 20px;
@@ -17,19 +17,19 @@
   opacity: .8;
 }
 
-.title, .phone{
+.footer__title, .footer__phone{
   font-weight: 700;
   font-size: 30px;
   text-align: center;
 }
 
-.tableBlock{
+.footer__tableBlock{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.timeTable{
+.footer__timeTable{
   text-align: left;
 }
 

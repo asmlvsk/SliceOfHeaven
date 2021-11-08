@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import CartContainer from '../../CartPage/CartModule/CartContainer';
 import NavBarContainer from '../../MainPage/NavigationBar/NavBarContainer';
-import styles from './Card.module.css';
+import cardStyles from './Card.module.css';
 import InfiniteScroll from 'react-infinite-scroll-component';
 
 import db from '../../../api/firestore';
@@ -64,31 +64,31 @@ let Card = (props) =>{
         }
     }
 
-    return<div className={styles.body}>        
+    return<div className={cardStyles.card__body}>        
             <InfiniteScroll
                 dataLength={cards.length}
                 next={fetchMore}
                 hasMore={true}>
-                <div className={styles.mainContent}>
+                <div className={cardStyles.card__mainContent}>
 
-                    <div className={styles.items}>
+                    <div className={cardStyles.card__items}>
                     {
-                        cards.map(t => <div key={t.id} className={styles.block}>
-                            <img src={t.image} className={styles.content} alt="Pizza Img"></img>
-                                <div className={styles.main}>
-                                    <div className={styles.type__title}>{t.name}</div>
-                                    <div className={styles.description}>{t.ingridients}</div>
-                                    <div className={styles.date}>Rozmiar: ok. {t.size} cm</div>                               
-                                    <div className={styles.buttonContainer}>
-                                        <div onClick={() => onAddToCart(t)} className={styles.button}>Wybierz</div>
-                                        <div className={styles.price}>{t.price} zł</div>
+                        cards.map(t => <div key={t.id} className={cardStyles.card__block}>
+                            <img src={t.image} className={cardStyles.card__content} alt="Pizza Img"></img>
+                                <div className={cardStyles.card__main}>
+                                    <div className={cardStyles.card__typeTitle}>{t.name}</div>
+                                    <div className={cardStyles.card__description}>{t.ingridients}</div>
+                                    <div className={cardStyles.card__date}>Rozmiar: ok. {t.size} cm</div>                               
+                                    <div className={cardStyles.card__buttonContainer}>
+                                        <div onClick={() => onAddToCart(t)} className={cardStyles.card__button}>Wybierz</div>
+                                        <div className={cardStyles.card__price}>{t.price} zł</div>
                                     </div>
                                 </div>
                         </div>)
                     }
                     </div>
 
-                    <div className={styles.cartBlock}>
+                    <div className={cardStyles.card__cartBlock}>
                         <CartContainer cartItems={cartItems} onAdd={onAddToCart} onRemove={onRemoveFromCart}/>
                     </div>
 

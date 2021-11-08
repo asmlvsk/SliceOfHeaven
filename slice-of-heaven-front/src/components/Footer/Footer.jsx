@@ -1,15 +1,15 @@
-import footer from "./Footer.module.css";
+import footerStyles from "./Footer.module.css";
 
 const Footer = (props) => {
 
     return(
-    <footer className={footer.container}>
-        <div className={footer.content}>
-            <div className={footer.bi_Contact_Block}>
-                <div className={footer.title}>Bulwar Ikara 27</div>
-                <div className={footer.phone}>tel: 735 145 635</div>
-                <div className={footer.tableBlock}>
-                    <table className={footer.timeTable}>
+    <footer className={footerStyles.footer__container}>
+        <div className={footerStyles.footer__content}>
+            <div className={footerStyles.footer__Contact_Block}>
+                <div className={footerStyles.footer__title}>Bulwar Ikara 27</div>
+                <div className={footerStyles.footer__phone}>tel: 735 145 635</div>
+                <div className={footerStyles.footer__tableBlock}>
+                    <table className={footerStyles.footer__timeTable}>
                         <tr>
                             <th>Poniedziałek</th>
                             <th>11:00 – 03:00</th>
@@ -42,11 +42,11 @@ const Footer = (props) => {
                 </div>
 
             </div>
-            <div className={footer.ss_Contact_Block}>
-                <div className={footer.title}>Sępa-Szarzyńskiego 71</div>
-                <div className={footer.phone}>tel: 735 145 625</div>
-                <div className={footer.tableBlock}>
-                    <table className={footer.timeTable}>
+            <div className={footerStyles.footer__Contact_Block}>
+                <div className={footerStyles.footer__title}>Sępa-Szarzyńskiego 71</div>
+                <div className={footerStyles.footer__phone}>tel: 735 145 625</div>
+                <div className={footerStyles.footer__tableBlock}>
+                    <table className={footerStyles.footer__timeTable}>
                         <tr>
                             <th>Poniedziałek</th>
                             <th>18:00 – 03:00</th>
@@ -78,9 +78,9 @@ const Footer = (props) => {
                     </table>
                 </div>            
             </div>
-            <div className={footer.polityka_Block}>
-                <div className={footer.politykaPrywat}>Polityka Prywatności</div>
-                <div className={footer.regulamin}>Regulamin</div>
+            <div className={footerStyles.footer__politBlock}>
+                <div className={footerStyles.footer__politykaPrywat}>Polityka Prywatności</div>
+                <div className={footerStyles.footer__regulamin}>Regulamin</div>
             </div>
         </div>        
     </footer>

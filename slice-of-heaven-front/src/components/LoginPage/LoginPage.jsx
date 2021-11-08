@@ -1,26 +1,19 @@
 import React from 'react';
-import styles from './LoginPage.module.css';
+import loginStyles from './LoginPage.module.css';
 
-const VacancyPage = (props) =>{
+const VacancyPage = () =>{
 
-    return<div className={styles.body}>
-        <div className={styles.title}>Logowanie do strony</div>
-        <div className={styles.container}>
-            <form className={styles.loginForm}>
-                <input placeholder="E-mail" className={styles.input} type="email" />
-                <input placeholder="Password" className={styles.input} type="password" />
-                <button className={styles.loginBtn}>Zaloguj Sie</button>
+    return<div className={loginStyles.login__body}>
+        <div className={loginStyles.login__title}>Logowanie do strony</div>
+        <div className={loginStyles.login__container}>
+            <form className={loginStyles.login__loginForm}>
+                <input placeholder="E-mail" className={loginStyles.login__input} type="email" />
+                <input placeholder="Password" className={loginStyles.login__input} type="password" />
+                <button className={loginStyles.login__loginBtn}>Zaloguj Sie</button>
             </form>
-            <div className={styles.preview}>
-                <div className={styles.previewTitle}>Zapraszamy do SLICE OF HEAVEN!</div>
+            <div className={loginStyles.login__preview}>
+                <div className={loginStyles.login__previewTitle}>Zapraszamy do SLICE OF HEAVEN!</div>
             </div>
-            {/* <form className={styles.loginForm}>
-                <input placeholder="E-mail" className={styles.input} type="email" />
-                <input placeholder="Repeat E-mail" className={styles.input} type="email" />
-                <input placeholder="Password" className={styles.input} type="password" />
-                <input placeholder="Repeat Password" className={styles.input} type="password" />
-                <button>Zarejestruj Sie</button>
-            </form> */}
         </div>    
     </div>
 

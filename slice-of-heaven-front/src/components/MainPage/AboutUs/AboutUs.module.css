@@ -1,4 +1,4 @@
-.body{
+.about__body{
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -12,11 +12,11 @@
     text-align: center;
 }
 
-.title{
+.about__title{
     font-size: 40px;
     font-weight: 700;
 }
 
-.text{
+.about__text{
     font-size: 20px;
 }

@@ -1,0 +1,28 @@
+.contact__inputs{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact__inputs > *{
+    flex-grow: 1;
+    min-width: 25%;
+}
+
+.contact__inputs_text{
+    height: 100px;
+    width: 100%;
+    resize: none;
+}
+
+.contact__inputs_button{
+    background-color: var(--main-color);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer; 
+}

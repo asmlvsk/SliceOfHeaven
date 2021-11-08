@@ -1,26 +1,26 @@
-.body{
+.card__body{
     margin: 0 auto;
     width: 1400px;
 }
 
-.mainContent{
+.card__mainContent{
     display: flex;
     flex-direction: row;
 }
 
-.items{
+.card__items{
     margin-top: 30px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 
-.block{
+.card__block{
     margin: 20px 20px 0 0;
     line-height: 0;
 }
 
-.main{
+.card__main{
     line-height: 1.6;
     display: flex;
     flex-direction: column;
@@ -35,13 +35,13 @@
     padding: 25px;
 }
 
-.type__title{
+.card__typeTitle{
     font-weight: 700;
     font-size: 20px;
     text-align: center;
 }
 
-.content{
+.card__content{
     color: var(--default-color);
     background-color: var(--secondary-color);
     width: 300px;
@@ -53,7 +53,7 @@
     object-fit: cover;
 }
 
-.description{
+.card__description{
     margin-top: 20px;
     display: -webkit-box;
     -webkit-line-clamp: 4;
@@ -65,14 +65,14 @@
     text-align: right;
 }
 
-.buttonContainer{
+.card__buttonContainer{
     display: flex;
     padding-top: 20px;
     justify-content: space-between;
     align-items: center;
 }
 
-.button {
+.card__button{
     background-color: var(--main-color);
     border-radius: 25px;
     color: white;
@@ -87,29 +87,15 @@
     transition: background-color .2s linear;
 }
 
-.button:hover{
+.card__button:hover{
     background-color: transparent;
 }
 
-.cartBlock{
+.card__cartBlock{
     width: 40%;
     display: flex;
     justify-content: center;
     margin-top: 50px;
-}
-
-.pagination{
-    color: var(--default-color);
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-    gap: 5rem;
-}
-
-.selectedPage{
-    font-weight: 700;
 }
 
 .loaderContainer{
@@ -118,7 +104,4 @@
     justify-content: center;
 }
 
-.cart{
-    color: var(--default-color);
-}
 

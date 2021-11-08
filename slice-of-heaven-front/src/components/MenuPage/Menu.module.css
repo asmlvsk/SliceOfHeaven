@@ -1,9 +1,8 @@
 body{
     background-color: var(--main-bg-color);
-    /* background-image: url(../../assets/4532814.jpg); */
 }
 
-.bg{
+.menu__bg{
     width: 100%;
     object-fit: fill;
     position: absolute;

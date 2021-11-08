@@ -1,4 +1,4 @@
-.panelBody{
+.filter__panelBody{
     width: 100%;
     border-width: 0 0 1px 0;
     border-style: solid;
@@ -6,7 +6,7 @@
     color: var(--default-color);
 }
 
-.container{
+.filter__container{
     font-size: 18px;
     max-width: 1400px;
     height: 136px;
@@ -17,11 +17,11 @@
     align-items: center;
 }
 
-.itemIcon{
+.filter__itemIcon{
     font-size: 30px;
 }
 
-.item{
+.filter__item{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,6 +32,6 @@
     transition: color .2s linear;
 }
   
-.item:hover{
+.filter__item:hover{
     color: var(--main-color);
 }

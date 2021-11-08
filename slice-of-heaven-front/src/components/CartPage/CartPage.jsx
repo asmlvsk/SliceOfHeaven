@@ -3,10 +3,10 @@ import pizzaBox from '../../assets/pizza-svgrepo-com.svg'
 
 const CartPage = (props) => {
     return(
-        <div className={style.body}>
-            <div className={style.container}>
+        <div className={style.cartPage__body}>
+            <div className={style.cartPage__container}>
                 <div>Cart is empty</div>
-                <img className={style.box} src={pizzaBox} alt="" />
+                <img className={style.cartPage__box} src={pizzaBox} alt="" />
             </div>           
         </div>
     );

@@ -1,10 +1,10 @@
-.body{
+.login__body{
     margin-left: 15%;
     margin-right: 5%;
     overflow: hidden;
 }
 
-.title{
+.login__title{
     font-size: 100px;
     font-weight: 700;
     text-transform: uppercase;
@@ -15,14 +15,14 @@
     margin-bottom: 20px;
 }
 
-.container{
+.login__container{
     display: flex;
     flex-direction: row;
 
     height: 750px;
 }
 
-.loginForm{
+.login__loginForm{
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -33,7 +33,7 @@
     background-repeat: no-repeat;
 }
 
-.input{
+.login__input{
     padding: 22px 20px;
     display: inline-block;
     border: 1px solid #ccc;
@@ -42,7 +42,7 @@
     margin: 0 70px 0 70px;
 }
 
-.loginBtn{
+.login__loginBtn{
     background-color: var(--main-color);
     color: white;
     padding: 15px 32px;
@@ -54,7 +54,7 @@
     cursor: pointer;
 }
 
-.preview{
+.login__preview{
     width: 50%;
     display: flex;
     align-items: center;
@@ -68,6 +68,6 @@
     border-style: solid;
 }
 
-.previewTitle{
+.login__previewTitle{
     max-width: 500px;
 }

@@ -1,16 +1,16 @@
 import React from 'react';
-import styles from './VacancyPage.module.css';
+import vacPageStyle from './VacancyPage.module.css';
 import VCard from './VacancyCard/VCard';
 
 import Dostawca from '../../assets/deliveryPic.jpg';
 import Kelnerka from '../../assets/waitress.jpg';
 import Pomoc from '../../assets/kitchenHelp.jpg';
 
-const VacancyPage = (props) =>{
+const VacancyPage = () =>{
 
-    return<div className={styles.body}>
-        <div className={styles.title}>Dołącz do zespołu Slice of Heaven!</div>
-        <div className={styles.items}>
+    return<div className={vacPageStyle.vacPage__body}>
+        <div className={vacPageStyle.vacPage__title}>Dołącz do zespołu Slice of Heaven!</div>
+        <div className={vacPageStyle.vacPage__items}>
             <VCard 
                 title={"Dostawca pizzy"} 
                 pic={Dostawca}/>

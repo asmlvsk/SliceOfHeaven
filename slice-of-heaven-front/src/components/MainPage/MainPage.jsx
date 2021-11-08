@@ -1,10 +1,9 @@
 import AboutUs from "./AboutUs/AboutUs";
-import main from "./MainPage.module.css";
 import Preview from "./Preview/Preview";
 
-const MainPage = (props) => {
+const MainPage = () => {
     return(
-        <div className={main.body}>
+        <div>
             <Preview/>
             <AboutUs/>
         </div>
