@@ -41,10 +41,8 @@ textarea{
 }
 
 .contact__button{
-    max-width: 90%;
     background-color: var(--main-color);
-    border-radius: 25px;
-    color: var(--default-color);
+    color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;

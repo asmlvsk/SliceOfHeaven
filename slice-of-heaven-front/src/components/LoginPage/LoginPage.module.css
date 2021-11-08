@@ -1,0 +1,73 @@
+.body{
+    margin-left: 15%;
+    margin-right: 5%;
+    overflow: hidden;
+}
+
+.title{
+    font-size: 100px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    line-height: 1;
+    opacity: 0.3;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+
+    height: 750px;
+}
+
+.loginForm{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    background-image: url(../../assets/pexels-malidate-van-784632.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.input{
+    padding: 22px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    box-sizing: border-box;
+    margin: 0 70px 0 70px;
+}
+
+.loginBtn{
+    background-color: var(--main-color);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 70px 10px 70px;
+    cursor: pointer;
+}
+
+.preview{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 75px;
+    font-weight: 700;
+    border-color: var(--default-color);
+    border-width: 1px 1px 1px 0;
+    border-style: solid;
+}
+
+.previewTitle{
+    max-width: 500px;
+}

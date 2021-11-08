@@ -17,7 +17,7 @@ class CardContainer extends React.Component{
 
     render(){
         return <>
-        {this.props.isFetching ? <div className={styles.loaderContainer}><img className={styles.loader} src={loader} alt="Loading..."/></div> : null} 
+        {/* {this.props.isFetching ? <div className={styles.loaderContainer}><img className={styles.loader} src={loader} alt="Loading..."/></div> : null}  */}
         <Card
             cards={this.props.cards}
             cartItems={this.props.cartItems}

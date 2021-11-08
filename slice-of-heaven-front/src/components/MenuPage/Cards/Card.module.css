@@ -105,10 +105,10 @@
     display: flex;
     justify-content: center;
     cursor: pointer;
+    gap: 5rem;
 }
 
 .selectedPage{
-    margin: 0 20px 0 20px;
     font-weight: 700;
 }
 

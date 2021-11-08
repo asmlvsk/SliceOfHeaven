@@ -23,10 +23,10 @@ const NavBar = (props) => {
 
                     <NavLink to="/contact" className={header.nav__link}>
                         <PhoneInTalkIcon/>
-                        <div className={header.nav__header}>Contact</div>
+                        <div className={header.nav__header}>Kontakt</div>
                     </NavLink>
 
-                    <NavLink to="/praca" className={header.nav__link}>
+                    <NavLink to="/vacancies" className={header.nav__link}>
                         <WorkIcon/>
                         <div className={header.nav__header}>Praca</div>
                     </NavLink>

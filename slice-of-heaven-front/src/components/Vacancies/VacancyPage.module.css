@@ -1,0 +1,21 @@
+.body{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 250px;
+}
+
+.title{
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 50px;
+    opacity: .3;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    gap: 20rem;
+}

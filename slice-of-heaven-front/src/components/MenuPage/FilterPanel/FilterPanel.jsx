@@ -7,7 +7,7 @@ import { BiWater } from 'react-icons/bi';
 import { FaWineBottle } from 'react-icons/fa';
 import { GiSaucepan } from 'react-icons/gi';
 
-const FilterPanel = () =>{
+const FilterPanel = (props) =>{
     return<div className={styles.panelBody}>
         <div className={styles.container}>
             <div className={styles.item}>
