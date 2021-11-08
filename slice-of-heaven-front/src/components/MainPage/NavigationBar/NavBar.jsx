@@ -3,10 +3,10 @@ import headerStyles from "./NavBar.module.css";
 import Badge from '@material-ui/core/Badge';
 
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCartRounded';
-import RestaurantMenuIcon from '@material-ui/icons/RestaurantMenu';
-import PhoneInTalkIcon from '@material-ui/icons/PhoneInTalk';
-import WorkIcon from '@material-ui/icons/Work';
-import LoginIcon from '@material-ui/icons/VpnKey';
+import {MdRestaurantMenu} from 'react-icons/md';
+import {MdContacts} from 'react-icons/md';
+import {MdWork} from 'react-icons/md';
+import {MdLogin} from 'react-icons/md';
 
 const NavBar = (props) => {
 
@@ -17,31 +17,31 @@ const NavBar = (props) => {
                 <nav className={headerStyles.header__nav}>
 
                     <NavLink to="/menu" className={headerStyles.header__nav_link}>
-                        <RestaurantMenuIcon/>
+                        <MdRestaurantMenu className={headerStyles.header__nav_icon}/>
                         <div className={headerStyles.header__nav_item}>Menu</div>
                     </NavLink>
 
                     <NavLink to="/contact" className={headerStyles.header__nav_link}>
-                        <PhoneInTalkIcon/>
+                        <MdContacts className={headerStyles.header__nav_icon}/>
                         <div className={headerStyles.header__nav_item}>Kontakt</div>
                     </NavLink>
 
                     <NavLink to="/vacancies" className={headerStyles.header__nav_link}>
-                        <WorkIcon/>
+                        <MdWork className={headerStyles.header__nav_icon}/>
                         <div className={headerStyles.header__nav_item}>Praca</div>
                     </NavLink>
 
                     <div>
                         {props.isAuth ? props.login : <NavLink to="/login" className={headerStyles.header__nav_link}>
-                                <LoginIcon/>
-                                <div>Konto</div>
+                                <MdLogin className={headerStyles.header__nav_icon}/>
+                                <div className={headerStyles.header__nav_item}>Konto</div>
                             </NavLink>}
                     </div>
 
                     <NavLink to="/cart" className={headerStyles.header__nav_link}>
                         <Badge className={headerStyles.header__nav_link} badgeContent={props.countCartItems} color="secondary">
-                            <ShoppingCartIcon />
-                            <div>Koszyk</div>
+                            <ShoppingCartIcon className={headerStyles.header__nav_icon}/>
+                            <div className={headerStyles.header__nav_item}>Koszyk</div>
                         </Badge>
                     </NavLink>
 

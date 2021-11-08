@@ -8,6 +8,8 @@
 .footer__content{
   max-width: 1200px;
   margin: 0 auto;
+  margin-left: 15%;
+  margin-right: 15%;
   padding-top: 20px;
   padding-bottom: 20px;
   color: var(--default-color);
@@ -36,3 +38,42 @@
 th{
   padding-right: 20px;
 }
+
+@media (max-width: 1120px) {
+  .footer__title, .footer__phone{
+    font-size: 15px;
+  }
+  .footer__tableBlock{
+    font-size: 10px;
+  }
+  .footer__content{
+    height: 100%;
+  }
+}
+
+@media (max-width: 620px) {
+
+  .footer__politBlock{
+    font-size: 10px;
+  }
+  .footer__tableBlock{
+    font-size: 8px;
+    height: 100%;
+  }
+}
+
+@media (max-width: 770px) {
+
+  .footer__content{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 460px) {
+
+  .footer__content{
+    flex-direction: column;
+  }
+}
+

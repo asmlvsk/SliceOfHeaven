@@ -52,3 +52,30 @@
     color: rgb(245, 245, 245);
     font-size: 32px;
 }
+
+@media (max-width: 1000px) {
+    .home__title{
+        font-size: 130px;
+    }
+    .home__suptitle{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 800px) {
+    .home__title{
+        font-size: 70px;
+    }
+    .home__suptitle{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .home__title{
+        font-size: 50px;
+    }
+    .home__suptitle{
+        font-size: 15px;
+    }
+}
